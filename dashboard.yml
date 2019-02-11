@@ -15,6 +15,7 @@
     badges: travis, appveyor, pypi, conda, conda-forge, defaults, gh-pages
 
   - repo: pyviz/holoviews
+    appveyor_project: pyviz/holoviews-ginxt
     badges: travis, appveyor, coveralls, pypi, conda, conda-forge, defaults
 
   - repo: pyviz/colorcet
@@ -35,7 +36,7 @@
     badges: travis, appveyor, pypi, conda, conda-forge
     
   - repo: pyviz/imagen
-    badges: travis, appveyor, pypi, conda, conda-forge
+    badges: travis, pypi
 
 - name: Metapackages and Example packages
 
