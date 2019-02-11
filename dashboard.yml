@@ -14,16 +14,15 @@
   - repo: pyviz/geoviews
     badges: travis, appveyor, pypi, conda, conda-forge, defaults, gh-pages
 
-  - repo: ioam/holoviews
-    appveyor_project: pyviz/holoviews
-    badges: travis, coveralls, pypi, conda, conda-forge, defaults
+  - repo: pyviz/holoviews
+    badges: travis, appveyor, coveralls, pypi, conda, conda-forge, defaults
 
   - repo: pyviz/colorcet
     badges: pypi, conda-forge, defaults, gh-pages
 
   - repo: pyviz/param
     appveyor_project: Ioam/param
-    badges: travis, appveyor, pypi, conda, conda-forge, defaults
+    badges: travis, appveyor, coveralls, pypi, conda, conda-forge, defaults
 
   - repo: ioam/paramtk
     badges: pypi
@@ -33,6 +32,9 @@
     badges: travis, appveyor, pypi, conda, conda-forge
 
   - repo: ioam/paramnb
+    badges: travis, appveyor, pypi, conda, conda-forge
+    
+  - repo: pyviz/imagen
     badges: travis, appveyor, pypi, conda, conda-forge
 
 - name: Metapackages and Example packages
