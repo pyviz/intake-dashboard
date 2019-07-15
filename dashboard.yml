@@ -35,9 +35,9 @@
 
   packages:
 
-  - repo: pyviz/pyviz
-    site: pyviz.org
-    badges: travis, appveyor, release, pypi, conda, conda-forge, defaults, gh-pages, site
+  - repo: pyviz/holoviz
+    site: holoviz.org
+    badges: travis, appveyor, release, pypi, conda, gh-pages, site
 
   - repo: pyviz-topics/EarthSim
     appveyor_project: pyviz/EarthSim
@@ -51,24 +51,24 @@
 - name: Tooling and Infrastructure packages
 
   packages:
-  
+
   - repo: pyviz-dev/sphinx_pyviz_theme
     badges: travis, release, pypi, conda
 
   - repo: pyviz/nbsite
-    badges: travis, release, pypi, conda, conda-forge, gh-pages, site
+    badges: travis, release, pypi, conda, gh-pages, site
 
   - repo: pyviz/nbsmoke
     badges: travis, appveyor, release, pypi, conda, conda-forge
 
   - repo: pyviz/autover
-    badges: travis, appveyor, release, pypi, conda, conda-forge
+    badges: travis, appveyor, release, pypi
 
   - repo: pyviz/pyct
     badges: travis, release, pypi, conda, conda-forge
 
   - repo: pyviz/pyctdev
-    badges: travis, release, pypi, conda, conda-forge
+    badges: travis, release, pypi, conda
 
 - name: Associated packages
 
