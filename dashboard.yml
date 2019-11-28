@@ -2,40 +2,40 @@
 
   packages:
 
-  - repo: pyviz/panel
+  - repo: holoviz/panel
     badges: travis, appveyor, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site
 
-  - repo: pyviz/hvplot
+  - repo: holoviz/hvplot
     badges: travis, appveyor, release, pypi, conda, conda-forge, defaults, gh-pages, site
 
-  - repo: pyviz/datashader
+  - repo: holoviz/datashader
     site: datashader.org
     badges: travis, appveyor, release, pypi, conda, conda-forge, defaults, site
 
-  - repo: pyviz/geoviews
+  - repo: holoviz/geoviews
     site: geoviews.org
     badges: travis, appveyor, release, pypi, conda, conda-forge, defaults, site
 
-  - repo: pyviz/holoviews
-    appveyor_project: pyviz/holoviews-ginxt
+  - repo: holoviz/holoviews
+    appveyor_project: holoviz-developers/holoviews
     site: holoviews.org
     badges: travis, appveyor, coveralls, release, pypi, conda, conda-forge, defaults, site
 
-  - repo: pyviz/colorcet
+  - repo: holoviz/colorcet
     badges: travis, appveyor, release, pypi, conda, conda-forge, defaults, gh-pages, site
 
-  - repo: pyviz/param
-    appveyor_project: Ioam/param
+  - repo: holoviz/param
+    appveyor_project: holoviz-developers/param
     badges: travis, appveyor, coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site
 
-  - repo: pyviz/imagen
+  - repo: pyviz-topics/imagen
     badges: travis, release, pypi, gh-pages, site
 
 - name: Metapackages and Example packages
 
   packages:
 
-  - repo: pyviz/holoviz
+  - repo: holoviz/holoviz
     site: holoviz.org
     badges: travis, appveyor, release, pypi, conda, gh-pages, site
 
@@ -55,19 +55,19 @@
   - repo: pyviz-dev/sphinx_pyviz_theme
     badges: travis, release, pypi, conda
 
-  - repo: pyviz/nbsite
+  - repo: pyviz-dev/nbsite
     badges: travis, release, pypi, conda, gh-pages, site
 
-  - repo: pyviz/nbsmoke
+  - repo: pyviz-dev/nbsmoke
     badges: travis, appveyor, release, pypi, conda, conda-forge
 
-  - repo: pyviz/autover
+  - repo: pyviz-dev/autover
     badges: travis, appveyor, release, pypi
 
-  - repo: pyviz/pyct
+  - repo: pyviz-dev/pyct
     badges: travis, release, pypi, conda, conda-forge
 
-  - repo: pyviz/pyctdev
+  - repo: pyviz-dev/pyctdev
     badges: travis, release, pypi, conda
 
 - name: Associated packages
