@@ -50,7 +50,7 @@ for section in config:
         if 'pypi' in package['badges'] and 'pypi_name' not in package:
             package['pypi_name'] = package['name']
         if 'appveyor' in package['badges'] and 'appveyor_project' not in package:
-            package['appveyor_project'] = package['repo']
+            package['appveyor_project'] = 'holoviz-developers' + '/' + package['name']
         if 'circleci' in package['badges'] and 'circleci_project' not in package:
             package['circleci_project'] = package['repo']
         if 'travis' in package['badges'] and 'travis_project' not in package:

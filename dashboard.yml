@@ -10,14 +10,13 @@
 
   - repo: holoviz/datashader
     site: datashader.org
-    badges: travis, appveyor, release, pypi, conda, conda-forge, defaults, site
+    badges: travis, appveyor, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site
 
   - repo: holoviz/geoviews
     site: geoviews.org
-    badges: travis, appveyor, release, pypi, conda, conda-forge, defaults, site
+    badges: travis, appveyor, coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site
 
   - repo: holoviz/holoviews
-    appveyor_project: holoviz-developers/holoviews
     site: holoviews.org
     badges: travis, appveyor, coveralls, release, pypi, conda, conda-forge, defaults, site
 
@@ -25,15 +24,15 @@
     badges: travis, appveyor, release, pypi, conda, conda-forge, defaults, gh-pages, site
 
   - repo: holoviz/param
-    appveyor_project: holoviz-developers/param
     badges: travis, appveyor, coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site
 
-  - repo: pyviz-topics/imagen
-    badges: travis, release, pypi, gh-pages, site
 
 - name: Metapackages and Example packages
 
   packages:
+
+  - repo: pyviz-topics/imagen
+    badges: travis, release, pypi, gh-pages, site
 
   - repo: holoviz/holoviz
     site: holoviz.org
@@ -47,21 +46,26 @@
     appveyor_project: jsignell/earthml
     badges: travis, appveyor, gh-pages, site
 
+  - repo: pyviz-topics/examples
+    badges: travis, gh-pages, site
+
 
 - name: Tooling and Infrastructure packages
 
   packages:
 
-  - repo: pyviz-dev/sphinx_pyviz_theme
+  - repo: pyviz-dev/sphinx_holoviz_theme
     badges: travis, release, pypi, conda
 
   - repo: pyviz-dev/nbsite
     badges: travis, release, pypi, conda, gh-pages, site
 
   - repo: pyviz-dev/nbsmoke
+    appveyor_project: pyviz/nbsmoke
     badges: travis, appveyor, release, pypi, conda, conda-forge
 
   - repo: pyviz-dev/autover
+    appveyor_project: pyviz/autover
     badges: travis, appveyor, release, pypi
 
   - repo: pyviz-dev/pyct
