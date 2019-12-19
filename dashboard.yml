@@ -62,7 +62,7 @@
 
   - repo: pyviz-dev/nbsmoke
     appveyor_project: pyviz/nbsmoke
-    badges: travis, appveyor, release, pypi, conda, conda-forge
+    badges: travis, appveyor, coveralls, release, pypi, conda, conda-forge
 
   - repo: pyviz-dev/autover
     appveyor_project: pyviz/autover
