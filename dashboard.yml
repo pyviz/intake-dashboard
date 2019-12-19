@@ -6,7 +6,7 @@
     badges: travis, appveyor, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site
 
   - repo: holoviz/hvplot
-    badges: travis, appveyor, release, pypi, conda, conda-forge, defaults, gh-pages, site
+    badges: travis, appveyor, coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site
 
   - repo: holoviz/datashader
     site: datashader.org
