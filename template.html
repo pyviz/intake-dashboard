@@ -13,8 +13,8 @@
         <th>Travis</th>
         <th>AppVeyor</th>
         <th>Coverage</th>
+        <th>Docs</th>	
         <th>Responsiveness</th>
-        <th>Docs</th>
         <th>Latest Tag</th>
         <th>PyPI</th>
         <th>Conda</th>
@@ -62,11 +62,6 @@
             <a href="{{ package.site_protocol }}://{{ package.site }}">
               <img src="https://img.shields.io/website-up-down-green-red/{{ package.site_protocol }}/{{ package.site }}.svg?label">
             </a>
-            {% if 'gh-pages' in package.badges %}
-            <a href="https://github.com/{{ package.repo }}/tree/gh-pages">
-              <img src="https://img.shields.io/github/last-commit/{{ package.repo }}/gh-pages.svg">
-            </a>
-            {% endif %}
           </td>
           {% elif 'rtd' in package.badges %}
           <td align='left'>
@@ -77,6 +72,12 @@
           {% else %}
           <td align='center'>-</td>
           {% endif %}
+	  <!-- assume all have 'responsiveness', i.e. commits to github master -->
+	  <td align='left'>
+            <a href="https://github.com/{{ package.repo }}">
+              <img src="https://img.shields.io/github/last-commit/{{ package.repo }}/master.svg">
+            </a>
+          </td>
           {% if 'release' in package.badges %}
           <td align='left'>
             <a href="https://github.com/{{ package.repo }}/tags">
