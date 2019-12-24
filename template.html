@@ -4,7 +4,7 @@
   </head>
   <body>
     <div id="wrapper">
-    <h1>HoloViz Project Dashboard</h1>
+    <h1><a href="https://holoviz.org/">HoloViz</a> Project Dashboard</h1>
     {% for section in config %}
     <h2>{{ section.name }}</h2>
     <table align='center'>
@@ -13,11 +13,11 @@
         <th>Travis</th>
         <th>AppVeyor</th>
         <th>Coverage</th>
-        <th>Docs</th>	
-        <th>Responsiveness</th>
+        <th>Docs</th>
+        <th colspan='4'>Activity</th>
         <th>Latest Tag</th>
         <th>PyPI</th>
-        <th>Conda</th>
+        <th colspan='3'>Conda</th>
       </tr>
       {% for package in section.packages %}
       <tr>
@@ -72,12 +72,31 @@
           {% else %}
           <td align='center'>-</td>
           {% endif %}
-	  <!-- assume all have 'responsiveness', i.e. commits to github master -->
-	  <td align='left'>
-            <a href="https://github.com/{{ package.repo }}">
-              <img src="https://img.shields.io/github/last-commit/{{ package.repo }}/master.svg">
-            </a>
+          <!-- activity; assume all have last commit to github master -->
+          <td align='left'>
+            <a href="https://github.com/{{ package.repo }}"><img src="https://img.shields.io/github/commit-activity/m/{{ package.repo }}?label=commits"></a>
           </td>
+          <td align='left'>
+            <a href="https://github.com/{{ package.repo }}"><img src="https://img.shields.io/github/last-commit/{{ package.repo }}/master.svg?label=master"></a>
+          </td>
+          {% if 'release-date' in package.badges %}
+          <td align='left'>
+            <a href="https://github.com/{{ package.repo }}/releases"><img src="https://img.shields.io/github/release-date/{{ package.repo }}?label=release"></a>
+          </td>
+          {% elif 'pre-release-date' in package.badges %}
+          <td align='left'>
+            <a href="https://github.com/{{ package.repo }}/releases"><img src="https://img.shields.io/github/release-date-pre/{{ package.repo }}?label=release"></a>
+          </td>
+          {% else %}
+          <td align='center'>-</td>
+          {% endif %}
+          {% if 'docs-date' in package.badges %}
+          <td align='left'>
+            <a href="https://github.com/{{ package.repo }}/tree/gh-pages"><img src="https://img.shields.io/github/last-commit/{{ package.repo }}/gh-pages.svg?label=docs"></a>
+          </td>
+          {% else %}
+          <td align='center'>-</td>
+          {% endif %}
           {% if 'release' in package.badges %}
           <td align='left'>
             <a href="https://github.com/{{ package.repo }}/tags">
