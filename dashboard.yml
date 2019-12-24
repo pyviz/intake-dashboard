@@ -69,7 +69,7 @@
     badges: travis, appveyor, release, pypi, release-date
 
   - repo: pyviz-dev/pyct
-    badges: travis, release, pypi, conda, conda-forge, release-date
+    badges: travis, release, pypi, conda, conda-forge, defaults, release-date
 
   - repo: pyviz-dev/pyctdev
     badges: travis, release, pypi, conda, pre-release-date
