@@ -79,13 +79,13 @@
   packages:
 
   - repo: bokeh/bokeh
-    badges: travis, appveyor, release, pypi, conda, conda-forge, defaults, release-date
+    badges: travis, appveyor, release, pypi, conda, conda-forge, defaults
     conda_channel: bokeh
     appveyor_project: bokeh-integrations/bokeh
 
   - repo: dask/dask
     appveyor_project: daskdev/dask
-    badges: travis, appveyor, coveralls, rtd, release, pypi, conda-forge, defaults, release-date
+    badges: travis, appveyor, coveralls, rtd, release, pypi, conda-forge, defaults
 
   - repo: numpy/numpy
     appveyor_project: charris/numpy
@@ -103,25 +103,25 @@
   packages:
 
   - repo: ContinuumIO/intake
-    badges: travis, appveyor, rtd, release, pypi, conda, conda-forge, defaults, release-date
+    badges: travis, appveyor, rtd, release, pypi, conda, conda-forge, defaults
     pypi_name: intake
     conda_channel: intake
     appveyor_project: jsignell/intake
 
   - repo: ContinuumIO/intake-xarray
-    badges: travis, appveyor, rtd, release, pypi, conda, conda-forge, defaults, release-date
+    badges: travis, appveyor, rtd, release, pypi, conda, conda-forge, defaults
     conda_channel: intake
     appveyor_project: jsignell/intake-xarray
 
   - repo: ContinuumIO/intake-parquet
     conda_channel: intake
-    badges: travis, rtd, release, pypi, conda, conda-forge, release-date
+    badges: travis, rtd, release, pypi, conda, conda-forge
 
   - repo: zarr-developers/zarr
     badges: travis, appveyor, coveralls, rtd, release, pypi, conda-forge, defaults, release-date
 
   - repo: dask/fastparquet
-    badges: travis, rtd, release, pypi, conda-forge, defaults, release-date
+    badges: travis, rtd, release, pypi, conda-forge, defaults
 
   - repo: Unidata/netcdf4-python
     pypi_name: netCDF4
