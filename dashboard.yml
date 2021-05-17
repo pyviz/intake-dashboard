@@ -26,6 +26,9 @@
   - repo: holoviz/param
     badges: travis, appveyor, coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
 
+  - repo: holoviz/lumen
+    badges: travis, appveyor, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+
 
 - name: Metapackages and Example packages
 
