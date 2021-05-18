@@ -3,28 +3,31 @@
   packages:
 
   - repo: holoviz/panel
-    badges: travis, appveyor, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    badges: codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
 
   - repo: holoviz/hvplot
-    badges: travis, appveyor, coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    badges: coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
 
   - repo: holoviz/datashader
     site: datashader.org
-    badges: travis, appveyor, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    badges: codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
 
   - repo: holoviz/geoviews
     site: geoviews.org
-    badges: travis, appveyor, coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    badges: coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
 
   - repo: holoviz/holoviews
     site: holoviews.org
-    badges: travis, appveyor, coveralls, release, pypi, conda, conda-forge, defaults, site, release-date
+    badges: coveralls, release, pypi, conda, conda-forge, defaults, site, release-date
 
   - repo: holoviz/colorcet
     badges: travis, appveyor, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
 
   - repo: holoviz/param
-    badges: travis, appveyor, coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    badges: coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+
+  - repo: holoviz/lumen
+    badges: codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
 
 
 - name: Metapackages and Example packages
