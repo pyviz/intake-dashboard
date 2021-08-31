@@ -49,12 +49,15 @@ for section in config:
             package['rtd_name'] = package['name']
         if 'pypi' in package['badges'] and 'pypi_name' not in package:
             package['pypi_name'] = package['name']
+        if 'gha' in package['badges']:
+            if not all(ppt in package for ppt in ['gha_workflow', 'gha_branch']):
+                msg = f'Missing Github Actions workflow file and/or target branch for {package["repo"]}'
+                raise ValueError(msg)
+            package['gha'] = True
         if 'appveyor' in package['badges'] and 'appveyor_project' not in package:
             package['appveyor_project'] = 'holoviz-developers' + '/' + package['name']
         if 'circleci' in package['badges'] and 'circleci_project' not in package:
             package['circleci_project'] = package['repo']
-        if 'travis' in package['badges'] and 'travis_project' not in package:
-            package['travis_project'] = package['repo']
         if 'conda' in package['badges'] and 'conda_channel' not in package:
             package['conda_channel'] = 'pyviz'
         if 'site' in package['badges']:

@@ -3,134 +3,169 @@
   packages:
 
   - repo: holoviz/panel
-    badges: codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    gha_workflow: test.yaml
+    gha_branch: master
 
   - repo: holoviz/hvplot
-    badges: coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    badges: gha, overalls, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    gha_workflow: test.yaml
+    gha_branch: master
 
   - repo: holoviz/datashader
     site: datashader.org
-    badges: codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    gha_workflow: test.yaml
+    gha_branch: master
 
   - repo: holoviz/geoviews
     site: geoviews.org
-    badges: coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    badges: gha, coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    gha_workflow: test.yaml
+    gha_branch: master
 
   - repo: holoviz/holoviews
     site: holoviews.org
-    badges: coveralls, release, pypi, conda, conda-forge, defaults, site, release-date
-
+    badges: gha, coveralls, release, pypi, conda, conda-forge, defaults, site, release-date
+    gha_workflow: test.yml
+    gha_branch: master
+  
   - repo: holoviz/colorcet
-    badges: travis, appveyor, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
-
+    badges: appveyor, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    gha_workflow: test.yml
+    gha_branch: master
+  
   - repo: holoviz/param
-    badges: coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    badges: gha, coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    gha_workflow: test.yml
+    gha_branch: master
 
   - repo: holoviz/lumen
-    badges: codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
-
+    badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    gha_workflow: test.yml
+    gha_branch: master
 
 - name: Metapackages and Example packages
 
   packages:
 
   - repo: pyviz-topics/imagen
-    badges: travis, release, pypi, gh-pages, site, release-date, docs-date
+    badges: release, pypi, gh-pages, site, release-date, docs-date
 
   - repo: holoviz/holoviz
     site: holoviz.org
-    badges: travis, appveyor, release, pypi, conda, gh-pages, site, release-date, docs-date
+    badges: gha, release, pypi, conda, gh-pages, site, release-date, docs-date
+    gha_workflow: test.yml
+    gha_branch: master
 
   - repo: pyviz-topics/EarthSim
     appveyor_project: pyviz/EarthSim
-    badges: travis, appveyor, release, conda-forge, gh-pages, site, release-date, docs-date
+    badges: appveyor, release, conda-forge, gh-pages, site, release-date, docs-date
 
   - repo: pyviz-topics/EarthML
     appveyor_project: jsignell/earthml
-    badges: travis, appveyor, gh-pages, site, release-date, docs-date
+    badges: appveyor, gh-pages, site, release-date, docs-date
 
   - repo: pyviz-topics/examples
-    badges: travis, gh-pages, site, release-date, docs-date
-
+    badges: gha, gh-pages, site, release-date, docs-date
+    gha_workflow: test.yml
+    gha_branch: master
 
 - name: Tooling and Infrastructure packages
 
   packages:
 
   - repo: pyviz-dev/sphinx_holoviz_theme
-    badges: travis, release, pypi, conda, release-date
+    badges: release, pypi, conda, release-date
 
   - repo: pyviz-dev/nbsite
-    badges: travis, release, pypi, conda, gh-pages, site, release-date, docs-date
+    badges: gha, release, pypi, conda, gh-pages, site, release-date, docs-date
+    gha_workflow: test.yml
+    gha_branch: master
 
   - repo: pyviz-dev/nbsmoke
     appveyor_project: pyviz/nbsmoke
-    badges: travis, appveyor, coveralls, release, pypi, conda, conda-forge, defaults, release-date
+    badges: appveyor, coveralls, release, pypi, conda, conda-forge, defaults, release-date
 
   - repo: pyviz-dev/autover
     appveyor_project: pyviz/autover
-    badges: travis, appveyor, release, pypi, release-date
+    badges: appveyor, release, pypi, release-date
 
   - repo: pyviz-dev/pyct
-    badges: travis, release, pypi, conda, conda-forge, defaults, release-date
+    badges: release, pypi, conda, conda-forge, defaults, release-date
 
   - repo: pyviz-dev/pyctdev
-    badges: travis, release, pypi, conda, pre-release-date
+    badges: release, pypi, conda, pre-release-date
 
 - name: Associated packages
 
   packages:
 
   - repo: bokeh/bokeh
-    badges: travis, appveyor, release, pypi, conda, conda-forge, defaults
+    badges: gha, release, pypi, conda, conda-forge, defaults
     conda_channel: bokeh
-    appveyor_project: bokeh-integrations/bokeh
+    gha_workflow: bokeh-ci.yml
+    gha_branch: main
 
   - repo: dask/dask
-    appveyor_project: daskdev/dask
-    badges: travis, appveyor, coveralls, rtd, release, pypi, conda-forge, defaults
+    badges: gha, coveralls, rtd, release, pypi, conda-forge, defaults
+    gha_workflow: tests.yml
+    gha_branch: main
 
   - repo: numpy/numpy
     appveyor_project: charris/numpy
-    badges: travis, appveyor, codecov, rtd, release, pypi, conda-forge, defaults, release-date
+    badges: gha, appveyor, codecov, rtd, release, pypi, conda-forge, defaults, release-date
+    gha_workflow: build_test.yml
+    gha_branch: main
 
   - repo: pandas-dev/pandas
-    badges: travis, appveyor, codecov, rtd, release, pypi, conda-forge, defaults, release-date
+    badges: gha, codecov, rtd, release, pypi, conda-forge, defaults, release-date
+    gha_workflow: python-dev.yml
+    gha_branch: master
 
   - repo: pydata/xarray
     appveyor_project: shoyer/xray
-    badges: travis, appveyor, coveralls, rtd, release, pypi, conda-forge, defaults, release-date
+    badges: gha, coveralls, rtd, release, pypi, conda-forge, defaults, release-date
+    gha_workflow: ci.yaml
+    gha_branch: main
 
 - name: Data Ingestion packages
 
   packages:
 
   - repo: ContinuumIO/intake
-    badges: travis, appveyor, rtd, release, pypi, conda, conda-forge, defaults
+    badges: gha, rtd, release, pypi, conda, conda-forge, defaults
     pypi_name: intake
     conda_channel: intake
-    appveyor_project: jsignell/intake
+    gha_workflow: main.yaml
+    gha_branch: master
 
   - repo: ContinuumIO/intake-xarray
-    badges: travis, appveyor, rtd, release, pypi, conda, conda-forge, defaults
+    badges: gha, rtd, release, pypi, conda, conda-forge, defaults
     conda_channel: intake
-    appveyor_project: jsignell/intake-xarray
+    gha_workflow: main.yaml
+    gha_branch: master
 
   - repo: ContinuumIO/intake-parquet
     conda_channel: intake
-    badges: travis, rtd, release, pypi, conda, conda-forge
+    badges: rtd, release, pypi, conda, conda-forge
 
   - repo: zarr-developers/zarr
-    badges: travis, appveyor, coveralls, rtd, release, pypi, conda-forge, defaults, release-date
+    badges: gha, coveralls, rtd, release, pypi, conda-forge, defaults, release-date
+    gha_workflow: python-package.yml
+    gha_branch: master
 
   - repo: dask/fastparquet
-    badges: travis, rtd, release, pypi, conda-forge, defaults
+    badges: gha, rtd, release, pypi, conda-forge, defaults
+    gha_workflow: main.yaml
+    gha_branch: main
 
   - repo: Unidata/netcdf4-python
     pypi_name: netCDF4
     conda_package: netCDF4
-    appveyor_project: jswhit/netcdf4-python
-    badges: travis, appveyor, release, pypi, conda-forge, defaults, release-date
+    badges: gha, release, pypi, conda-forge, defaults, release-date
+    gha_workflow: miniconda.yml
+    gha_branch: master
 
 
 - name: Niche packages
@@ -139,13 +174,21 @@
 
   - repo: networkx/networkx
     appveyor_project: dschult/networkx-pqott
-    badges: travis, appveyor, codecov, release, pypi, conda-forge, defaults, release-date
+    badges: gha, codecov, release, pypi, conda-forge, defaults, release-date
+    gha_workflow: test.yml
+    gha_branch: main
 
   - repo: scikit-image/scikit-image
-    badges: travis, appveyor, codecov, release, pypi, conda-forge, defaults, release-date
+    badges: gha, codecov, release, pypi, conda-forge, defaults, release-date
+    gha_workflow: tests.yml
+    gha_branch: main
 
   - repo: SciTools/cartopy
-    badges: travis, appveyor, coveralls, release, pypi, conda-forge, defaults, release-date
+    badges: gha, coveralls, release, pypi, conda-forge, defaults, release-date
+    gha_workflow: ci-testing.yml
+    gha_branch: master
 
   - repo: geopandas/geopandas
-    badges: travis, coveralls, rtd, release, pypi, conda-forge, defaults, release-date
+    badges: gha, coveralls, rtd, release, pypi, conda-forge, defaults, release-date
+    gha_workflow: tests.yaml
+    gha_branch: master
