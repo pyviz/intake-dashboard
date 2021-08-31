@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    branches:
+    - '*'
 
 jobs:
   build_docs:
@@ -37,6 +40,7 @@ jobs:
           git status
           git diff
       - name: Deploy site
+        if: ${{ github.ref == 'refs/heads/master' }}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

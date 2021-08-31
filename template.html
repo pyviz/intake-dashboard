@@ -10,7 +10,7 @@
     <table align='center'>
       <tr>
         <th>Name</th>
-        <th>Travis</th>
+        <th>Github Actions</th>
         <th>AppVeyor</th>
         <th>Coverage</th>
         <th>Docs</th>
@@ -24,10 +24,10 @@
         <td align='left'>
           <a href="http://github.com/{{ package.repo }}">{{ package.name }}</a>
         </td>
-          {% if 'travis' in package.badges %}
+          {% if 'gha' in package.badges %}
           <td align='left'>
-            <a href="https://travis-ci.org/{{ package.travis_project }}">
-              <img src="https://img.shields.io/travis/{{ package.travis_project }}.svg?branch=master&label">
+            <a href="https://github.com/{{ package.repo }}/actions/workflows/{{ package.gha_workflow }}?query=branch:{{ package.gha_branch }}">  
+              <img src="https://github.com/{{ package.repo }}/actions/workflows/{{ package.gha_workflow }}/badge.svg">
             </a>
           </td>
           {% else %}

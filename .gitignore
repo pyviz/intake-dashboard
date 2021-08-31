@@ -7,4 +7,5 @@ builtdocs/
 # pyctdev
 .doit.db
 
-deploy
+# Mac
+.DS_Store
