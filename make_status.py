@@ -2,11 +2,11 @@
 
 import sys
 from jinja2 import Template
-from yaml import load
+from yaml import safe_load
 import requests
 
 with open('dashboard.yml') as f:
-    config = load(f)
+    config = safe_load(f)
 
 existing = {package['repo'].split('/')[1].lower(): package for section in config for package in section['packages']}
 
