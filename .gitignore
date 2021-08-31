@@ -1,1 +1,10 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Website built target
+builtdocs/
+
+# pyctdev
+.doit.db
+
 deploy
