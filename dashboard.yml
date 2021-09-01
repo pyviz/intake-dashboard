@@ -102,12 +102,16 @@
   packages:
 
   - repo: pyviz/pyviz.org
-    badges: site, docs-date
+    badges: gha, site, docs-date
     site: pyviz.org
+    gha_workflow: docs.yml
+    gha_branch: master
 
   - repo: pyviz-dev/status-dashboard
-    badges: site, docs-date
+    badges: gha, site, docs-date
     site: status.holoviz.org
+    gha_workflow: docs.yml
+    gha_branch: master
 
 - name: Associated packages
 
