@@ -110,7 +110,7 @@
   - repo: pyviz-dev/status-dashboard
     badges: gha, site, docs-date
     site: status.holoviz.org
-    gha_workflow: docs.yml
+    gha_workflow: docs.yaml
     gha_branch: master
 
 - name: Associated packages
