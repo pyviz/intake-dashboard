@@ -20,8 +20,6 @@ for section in config:
                 msg = f'Missing Github Actions workflow file and/or target branch for {package["repo"]}'
                 raise ValueError(msg)
             package['gha'] = True
-        if 'appveyor' in package['badges'] and 'appveyor_project' not in package:
-            package['appveyor_project'] = 'holoviz-developers' + '/' + package['name']
         if 'circleci' in package['badges'] and 'circleci_project' not in package:
             package['circleci_project'] = package['repo']
         if 'conda' in package['badges'] and 'conda_channel' not in package:

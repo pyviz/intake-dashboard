@@ -11,7 +11,6 @@
       <tr>
         <th>Name</th>
         <th>Github Actions</th>
-        <th>AppVeyor</th>
         <th>Coverage</th>
         <th>Docs</th>
         <th colspan='4'>Activity</th>
@@ -28,15 +27,6 @@
           <td align='left'>
             <a href="https://github.com/{{ package.repo }}/actions/workflows/{{ package.gha_workflow }}?query=branch:{{ package.gha_branch }}">  
               <img src="https://github.com/{{ package.repo }}/actions/workflows/{{ package.gha_workflow }}/badge.svg">
-            </a>
-          </td>
-          {% else %}
-          <td align='center'>-</td>
-          {% endif %}
-          {% if 'appveyor' in package.badges %}
-          <td align='left'>
-            <a href="https://ci.appveyor.com/project/{{ package.appveyor_project }}?branch=master">
-              <img src="https://img.shields.io/appveyor/ci/{{ package.appveyor_project }}/master.svg?label">
             </a>
           </td>
           {% else %}

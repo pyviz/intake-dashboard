@@ -31,7 +31,7 @@
     gha_branch: master
   
   - repo: holoviz/colorcet
-    badges: appveyor, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    badges: release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
     gha_workflow: test.yml
     gha_branch: master
   
@@ -59,12 +59,10 @@
     gha_branch: master
 
   - repo: pyviz-topics/EarthSim
-    appveyor_project: pyviz/EarthSim
-    badges: appveyor, release, conda-forge, gh-pages, site, release-date, docs-date
+    badges: release, conda-forge, gh-pages, site, release-date, docs-date
 
   - repo: pyviz-topics/EarthML
-    appveyor_project: jsignell/earthml
-    badges: appveyor, gh-pages, site, release-date, docs-date
+    badges: gh-pages, site, release-date, docs-date
 
   - repo: pyviz-topics/examples
     badges: gha, gh-pages, site, release-date, docs-date
@@ -84,12 +82,10 @@
     gha_branch: master
 
   - repo: pyviz-dev/nbsmoke
-    appveyor_project: pyviz/nbsmoke
-    badges: appveyor, coveralls, release, pypi, conda, conda-forge, defaults, release-date
+    badges: coveralls, release, pypi, conda, conda-forge, defaults, release-date
 
   - repo: pyviz-dev/autover
-    appveyor_project: pyviz/autover
-    badges: appveyor, release, pypi, release-date
+    badges: release, pypi, release-date
 
   - repo: pyviz-dev/pyct
     badges: release, pypi, conda, conda-forge, defaults, release-date
@@ -129,8 +125,7 @@
     gha_branch: main
 
   - repo: numpy/numpy
-    appveyor_project: charris/numpy
-    badges: gha, appveyor, codecov, rtd, release, pypi, conda-forge, defaults, release-date
+    badges: gha, codecov, rtd, release, pypi, conda-forge, defaults, release-date
     gha_workflow: build_test.yml
     gha_branch: main
 
@@ -140,7 +135,6 @@
     gha_branch: master
 
   - repo: pydata/xarray
-    appveyor_project: shoyer/xray
     badges: gha, coveralls, rtd, release, pypi, conda-forge, defaults, release-date
     gha_workflow: ci.yaml
     gha_branch: main
@@ -189,7 +183,6 @@
   packages:
 
   - repo: networkx/networkx
-    appveyor_project: dschult/networkx-pqott
     badges: gha, codecov, release, pypi, conda-forge, defaults, release-date
     gha_workflow: test.yml
     gha_branch: main
