@@ -25,7 +25,7 @@
         </td>
           {% if 'gha' in package.badges %}
           <td align='left'>
-            <a href="https://github.com/{{ package.repo }}/actions/workflows/{{ package.gha_workflow }}?query=branch:{{ package.gha_branch }}">  
+            <a href="https://github.com/{{ package.repo }}/actions/workflows/{{ package.gha_workflow }}?query=branch:{{ package.branch }}">  
               <img src="https://github.com/{{ package.repo }}/actions/workflows/{{ package.gha_workflow }}/badge.svg">
             </a>
           </td>
@@ -34,14 +34,14 @@
           {% endif %}
           {% if 'coveralls' in package.badges %}
           <td align='left'>
-            <a href="https://coveralls.io/r/{{ package.repo }}?branch=master">
-              <img src="https://coveralls.io/repos/{{ package.repo }}/badge.svg?branch=master">
+            <a href="https://coveralls.io/r/{{ package.repo }}?branch={{ package.branch }}">
+              <img src="https://coveralls.io/repos/{{ package.repo }}/badge.svg?branch={{ package.branch }}">
             </a>
           </td>
           {% elif 'codecov' in package.badges %}
           <td align='left'>
-            <a href="https://codecov.io/gh/{{ package.repo }}?branch=master">
-              <img src="https://codecov.io/gh/{{ package.repo }}/branch/master/graph/badge.svg">
+            <a href="https://codecov.io/gh/{{ package.repo }}?branch={{ package.branch }}">
+              <img src="https://codecov.io/gh/{{ package.repo }}/branch/{{ package.branch }}/graph/badge.svg">
             </a>
           </td>
           {% else %}
@@ -62,12 +62,11 @@
           {% else %}
           <td align='center'>-</td>
           {% endif %}
-          <!-- activity; assume all have last commit to github master -->
           <td align='left'>
             <a href="https://github.com/{{ package.repo }}"><img src="https://img.shields.io/github/commit-activity/m/{{ package.repo }}?label=commits"></a>
           </td>
           <td align='left'>
-            <a href="https://github.com/{{ package.repo }}"><img src="https://img.shields.io/github/last-commit/{{ package.repo }}/master.svg?label=master"></a>
+            <a href="https://github.com/{{ package.repo }}"><img src="https://img.shields.io/github/last-commit/{{ package.repo }}/{{ package.branch }}.svg?label={{ package.branch }}"></a>
           </td>
           {% if 'release-date' in package.badges %}
           <td align='left'>

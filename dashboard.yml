@@ -5,45 +5,37 @@
   - repo: holoviz/panel
     badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
     gha_workflow: test.yaml
-    gha_branch: master
 
   - repo: holoviz/hvplot
     badges: gha, overalls, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
     gha_workflow: test.yaml
-    gha_branch: master
 
   - repo: holoviz/datashader
     site: datashader.org
     badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
     gha_workflow: test.yaml
-    gha_branch: master
 
   - repo: holoviz/geoviews
     site: geoviews.org
     badges: gha, coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
     gha_workflow: test.yaml
-    gha_branch: master
 
   - repo: holoviz/holoviews
     site: holoviews.org
     badges: gha, coveralls, release, pypi, conda, conda-forge, defaults, site, release-date
     gha_workflow: test.yml
-    gha_branch: master
   
   - repo: holoviz/colorcet
     badges: release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
     gha_workflow: test.yml
-    gha_branch: master
   
   - repo: holoviz/param
     badges: gha, coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
     gha_workflow: test.yml
-    gha_branch: master
 
   - repo: holoviz/lumen
     badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
     gha_workflow: test.yml
-    gha_branch: master
 
 - name: Metapackages and Example packages
 
@@ -56,7 +48,6 @@
     site: holoviz.org
     badges: gha, release, pypi, conda, gh-pages, site, release-date, docs-date
     gha_workflow: test.yml
-    gha_branch: master
 
   - repo: pyviz-topics/EarthSim
     badges: release, conda-forge, gh-pages, site, release-date, docs-date
@@ -64,7 +55,6 @@
   - repo: pyviz-topics/examples
     badges: gha, gh-pages, site, release-date, docs-date
     gha_workflow: test.yml
-    gha_branch: master
 
 - name: Tooling and Infrastructure packages
 
@@ -76,7 +66,6 @@
   - repo: pyviz-dev/nbsite
     badges: gha, release, pypi, conda, gh-pages, site, release-date, docs-date
     gha_workflow: test.yml
-    gha_branch: master
 
   - repo: pyviz-dev/nbsmoke
     badges: coveralls, release, pypi, conda, conda-forge, defaults, release-date
@@ -98,13 +87,11 @@
     badges: gha, site, docs-date
     site: pyviz.org
     gha_workflow: docs.yml
-    gha_branch: master
 
   - repo: pyviz-dev/status-dashboard
     badges: gha, site, docs-date
     site: status.holoviz.org
     gha_workflow: docs.yaml
-    gha_branch: master
 
   - repo: pyviz-topics/EarthML
     badges: site, docs-date
@@ -118,30 +105,29 @@
     badges: gha, site, release, pypi, conda, conda-forge, defaults
     conda_channel: bokeh
     gha_workflow: bokeh-ci.yml
-    gha_branch: main
+    branch: main
     site: bokeh.org
 
   - repo: dask/dask
     badges: gha, coveralls, rtd, release, pypi, conda-forge, defaults
     gha_workflow: tests.yml
-    gha_branch: main
+    branch: main
 
   - repo: numpy/numpy
     badges: gha, codecov, release, pypi, conda-forge, defaults, release-date
     gha_workflow: build_test.yml
-    gha_branch: main
+    branch: main
     site: numpy.org
 
   - repo: pandas-dev/pandas
     badges: gha, codecov, release, pypi, conda-forge, defaults, release-date
     gha_workflow: python-dev.yml
-    gha_branch: master
     site: pandas.pydata.org
 
   - repo: pydata/xarray
     badges: gha, coveralls, rtd, release, pypi, conda-forge, defaults, release-date
     gha_workflow: ci.yaml
-    gha_branch: main
+    branch: main
     rtd_name: xray
 
 - name: Data Ingestion packages
@@ -153,13 +139,11 @@
     pypi_name: intake
     conda_channel: intake
     gha_workflow: main.yaml
-    gha_branch: master
 
   - repo: ContinuumIO/intake-xarray
     badges: gha, rtd, release, pypi, conda, conda-forge, defaults
     conda_channel: intake
     gha_workflow: main.yaml
-    gha_branch: master
 
   - repo: ContinuumIO/intake-parquet
     conda_channel: intake
@@ -168,19 +152,17 @@
   - repo: zarr-developers/zarr
     badges: gha, coveralls, rtd, release, pypi, conda-forge, defaults, release-date
     gha_workflow: python-package.yml
-    gha_branch: master
 
   - repo: dask/fastparquet
     badges: gha, rtd, release, pypi, conda-forge, defaults
     gha_workflow: main.yaml
-    gha_branch: main
+    branch: main
 
   - repo: Unidata/netcdf4-python
     pypi_name: netCDF4
     conda_package: netCDF4
     badges: gha, release, pypi, conda-forge, defaults, release-date
     gha_workflow: miniconda.yml
-    gha_branch: master
 
 
 - name: Niche packages
@@ -190,19 +172,17 @@
   - repo: networkx/networkx
     badges: gha, codecov, release, pypi, conda-forge, defaults, release-date
     gha_workflow: test.yml
-    gha_branch: main
+    branch: main
 
   - repo: scikit-image/scikit-image
     badges: gha, codecov, release, pypi, conda-forge, defaults, release-date
     gha_workflow: tests.yml
-    gha_branch: main
+    branch: main
 
   - repo: SciTools/cartopy
     badges: gha, coveralls, release, pypi, conda-forge, defaults, release-date
     gha_workflow: ci-testing.yml
-    gha_branch: master
 
   - repo: geopandas/geopandas
     badges: gha, coveralls, rtd, release, pypi, conda-forge, defaults, release-date
     gha_workflow: tests.yaml
-    gha_branch: master
