@@ -115,10 +115,11 @@
   packages:
 
   - repo: bokeh/bokeh
-    badges: gha, release, pypi, conda, conda-forge, defaults
+    badges: gha, site, release, pypi, conda, conda-forge, defaults
     conda_channel: bokeh
     gha_workflow: bokeh-ci.yml
     gha_branch: main
+    site: bokeh.org
 
   - repo: dask/dask
     badges: gha, coveralls, rtd, release, pypi, conda-forge, defaults
