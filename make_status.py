@@ -26,7 +26,7 @@ for section in config:
             package['conda_channel'] = 'pyviz'
         if 'site' in package['badges']:
             package['site_protocol'] = package.get('site_protocol', 'http')
-            package['site'] = package.get('site', '{}.pyviz.org'.format(package['name']))
+            package['site'] = package.get('site', '{}.holoviz.org'.format(package['name']))
 
 template = Template(open('template.html', 'r').read())
 
