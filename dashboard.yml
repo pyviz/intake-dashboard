@@ -61,9 +61,6 @@
   - repo: pyviz-topics/EarthSim
     badges: release, conda-forge, gh-pages, site, release-date, docs-date
 
-  - repo: pyviz-topics/EarthML
-    badges: gh-pages, site, release-date, docs-date
-
   - repo: pyviz-topics/examples
     badges: gha, gh-pages, site, release-date, docs-date
     gha_workflow: test.yml
@@ -108,6 +105,10 @@
     site: status.holoviz.org
     gha_workflow: docs.yaml
     gha_branch: master
+
+  - repo: pyviz-topics/EarthML
+    badges: site, docs-date
+    site: earthml.holoviz.org
 
 - name: Associated packages
 
