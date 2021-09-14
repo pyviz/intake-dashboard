@@ -115,13 +115,13 @@
     branch: main
 
   - repo: numpy/numpy
-    badges: gha, codecov, release, pypi, conda-forge, defaults, release-date
+    badges: gha, codecov, site, release, pypi, conda-forge, defaults, release-date
     gha_workflow: build_test.yml
     branch: main
     site: numpy.org
 
   - repo: pandas-dev/pandas
-    badges: gha, codecov, release, pypi, conda-forge, defaults, release-date
+    badges: gha, codecov, site, release, pypi, conda-forge, defaults, release-date
     gha_workflow: python-dev.yml
     site: pandas.pydata.org
 
