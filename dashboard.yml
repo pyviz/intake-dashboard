@@ -139,6 +139,7 @@
     badges: gha, coveralls, rtd, release, pypi, conda-forge, defaults, release-date
     gha_workflow: ci.yaml
     gha_branch: main
+    rtd_name: xray
 
 - name: Data Ingestion packages
 
