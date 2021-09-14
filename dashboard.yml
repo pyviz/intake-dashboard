@@ -55,6 +55,7 @@
   - repo: pyviz-topics/examples
     badges: gha, gh-pages, site, release-date, docs-date
     gha_workflow: test.yml
+    site: examples.pyviz.org
 
 - name: Tooling and Infrastructure packages
 
