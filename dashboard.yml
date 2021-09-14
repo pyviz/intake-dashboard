@@ -109,7 +109,7 @@
     site: bokeh.org
 
   - repo: dask/dask
-    badges: gha, coveralls, rtd, release, pypi, conda-forge, defaults
+    badges: gha, codecov, rtd, release, pypi, conda-forge, defaults
     gha_workflow: tests.yml
     branch: main
 
@@ -125,7 +125,7 @@
     site: pandas.pydata.org
 
   - repo: pydata/xarray
-    badges: gha, coveralls, rtd, release, pypi, conda-forge, defaults, release-date
+    badges: gha, codecov, rtd, release, pypi, conda-forge, defaults, release-date
     gha_workflow: ci.yaml
     branch: main
     rtd_name: xray
