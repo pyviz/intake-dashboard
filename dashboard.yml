@@ -127,14 +127,16 @@
     gha_branch: main
 
   - repo: numpy/numpy
-    badges: gha, codecov, rtd, release, pypi, conda-forge, defaults, release-date
+    badges: gha, codecov, release, pypi, conda-forge, defaults, release-date
     gha_workflow: build_test.yml
     gha_branch: main
+    site: numpy.org
 
   - repo: pandas-dev/pandas
-    badges: gha, codecov, rtd, release, pypi, conda-forge, defaults, release-date
+    badges: gha, codecov, release, pypi, conda-forge, defaults, release-date
     gha_workflow: python-dev.yml
     gha_branch: master
+    site: pandas.pydata.org
 
   - repo: pydata/xarray
     badges: gha, coveralls, rtd, release, pypi, conda-forge, defaults, release-date
