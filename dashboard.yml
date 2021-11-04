@@ -70,7 +70,7 @@
 
   - repo: pyviz-dev/nbsmoke
     badges: gha, codecov, release, pypi, conda, conda-forge, defaults, release-date
-    gha_workflow: tests.yml
+    gha_workflow: tests.yaml
 
   - repo: pyviz-dev/autover
     badges: release, pypi, release-date
