@@ -7,12 +7,12 @@
     gha_workflow: test.yaml
 
   - repo: holoviz/hvplot
-    badges: gha, overalls, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    badges: gha, coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
     gha_workflow: test.yaml
 
   - repo: holoviz/datashader
     site: datashader.org
-    badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    badges: gha, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
     gha_workflow: test.yaml
 
   - repo: holoviz/geoviews
@@ -26,8 +26,8 @@
     gha_workflow: test.yml
   
   - repo: holoviz/colorcet
-    badges: release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
-    gha_workflow: test.yml
+    badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    gha_workflow: tests.yaml
   
   - repo: holoviz/param
     badges: gha, coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
@@ -69,7 +69,8 @@
     gha_workflow: test.yml
 
   - repo: pyviz-dev/nbsmoke
-    badges: coveralls, release, pypi, conda, conda-forge, defaults, release-date
+    badges: gha, codecov, release, pypi, conda, conda-forge, defaults, release-date
+    gha_workflow: tests.yml
 
   - repo: pyviz-dev/autover
     badges: release, pypi, release-date
