@@ -7,35 +7,35 @@
     gha_workflow: test.yaml
 
   - repo: holoviz/hvplot
-    badges: gha, coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
     gha_workflow: test.yaml
 
   - repo: holoviz/datashader
     site: datashader.org
-    badges: gha, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
     gha_workflow: test.yaml
 
   - repo: holoviz/geoviews
     site: geoviews.org
-    badges: gha, coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
     gha_workflow: test.yaml
 
   - repo: holoviz/holoviews
     site: holoviews.org
-    badges: gha, coveralls, release, pypi, conda, conda-forge, defaults, site, release-date
-    gha_workflow: test.yml
+    badges: gha, codecov, release, pypi, conda, conda-forge, defaults, site, release-date
+    gha_workflow: test.yaml
   
   - repo: holoviz/colorcet
     badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
-    gha_workflow: tests.yaml
+    gha_workflow: test.yaml
   
   - repo: holoviz/param
-    badges: gha, coveralls, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
-    gha_workflow: test.yml
+    badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    gha_workflow: test.yaml
 
   - repo: holoviz/lumen
-    badges: gha, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
-    gha_workflow: test.yml
+    badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
+    gha_workflow: test.yaml
 
 - name: Metapackages and Example packages
 
