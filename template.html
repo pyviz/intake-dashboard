@@ -24,11 +24,25 @@
           <a href="http://github.com/{{ package.repo }}">{{ package.name }}</a>
         </td>
           {% if 'gha' in package.badges %}
-          <td align='left'>
-            <a href="https://github.com/{{ package.repo }}/actions/workflows/{{ package.gha_workflow }}?query=branch:{{ package.branch }}">  
-              <img src="https://github.com/{{ package.repo }}/actions/workflows/{{ package.gha_workflow }}/badge.svg">
-            </a>
-          </td>
+            {% if section.name == "Core and Coordinated packages" %}
+            <td align='left'>
+              <a href="https://github.com/{{ package.repo }}/actions/workflows/test.yaml?query=branch:{{ package.branch }}">  
+                <img src="https://github.com/{{ package.repo }}/actions/workflows/test.yaml/badge.svg">
+              </a>
+              <a href="https://github.com/{{ package.repo }}/actions/workflows/build.yaml?query=branch:{{ package.branch }}&query=event:schedule">  
+                <img src="https://github.com/{{ package.repo }}/actions/workflows/build.yaml/badge.svg?event=schedule">
+              </a>
+              <a href="https://github.com/{{ package.repo }}/actions/workflows/docs.yaml?query=branch:{{ package.branch }}&query=event:schedule">  
+                <img src="https://github.com/{{ package.repo }}/actions/workflows/docs.yaml/badge.svg?event=schedule">
+              </a>
+            </td>
+            {% else %}
+            <td align='left'>
+              <a href="https://github.com/{{ package.repo }}/actions/workflows/{{ package.gha_workflow }}?query=branch:{{ package.branch }}">  
+                <img src="https://github.com/{{ package.repo }}/actions/workflows/{{ package.gha_workflow }}/badge.svg">
+              </a>
+            </td>
+            {% endif %}
           {% else %}
           <td align='center'>-</td>
           {% endif %}
