@@ -37,6 +37,10 @@
     badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
     gha_workflow: test.yaml
 
+  - repo: holoviz/spatialpandas
+    badges: gha, release, pypi, conda, conda-forge, defaults, release-date
+    gha_workflow: test.yml
+
 - name: Metapackages and Example packages
 
   packages:
