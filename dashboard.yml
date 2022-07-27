@@ -45,7 +45,7 @@
   - repo: holoviz/holoviz
     site: holoviz.org
     badges: gha, release, pypi, conda, gh-pages, site, release-date, docs-date
-    gha_workflow: test.yml
+    gha_workflow: test.yaml
 
   - repo: pyviz-topics/EarthSim
     badges: release, conda-forge, gh-pages, site, release-date, docs-date
