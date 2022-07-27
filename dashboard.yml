@@ -32,6 +32,9 @@
   - repo: holoviz/spatialpandas
     badges: gha, release, pypi, conda, conda-forge, defaults, release-date
 
+  - repo: holoviz/pyviz_comms
+    badges: gha, release, pypi, conda, conda-forge, defaults, release-date
+
 - name: Metapackages and Example packages
 
   packages:
