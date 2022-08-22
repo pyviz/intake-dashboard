@@ -35,6 +35,9 @@
   - repo: holoviz/pyviz_comms
     badges: gha, release, pypi, conda, conda-forge, defaults, release-date
 
+  - repo: holoviz/jupyter-panel-proxy
+    badges: gha, release, pypi, conda, conda-forge, defaults, release-date
+
 - name: Metapackages and Example packages
 
   packages:
