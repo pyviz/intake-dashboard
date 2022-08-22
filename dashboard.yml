@@ -71,16 +71,16 @@
     gha_workflow: tests.yaml
 
   - repo: pyviz-dev/autover
-    badges: release, pypi, release-date
+    badges: gha, release, pypi, release-date
 
   - repo: pyviz-dev/pyct
-    badges: release, pypi, conda, conda-forge, defaults, release-date
+    badges: gha, release, pypi, conda, conda-forge, defaults, release-date
 
   - repo: pyviz-dev/pyctdev
-    badges: release, pypi, conda, pre-release-date
+    badges: gha, release, pypi, conda, pre-release-date
 
   - repo: pyviz-dev/sphinx_holoviz_theme
-    badges: release, pypi, conda, release-date
+    badges: gha, release, pypi, conda, release-date
 
 - name: Websites only
 
