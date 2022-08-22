@@ -62,9 +62,6 @@
 
   packages:
 
-  - repo: pyviz-dev/sphinx_holoviz_theme
-    badges: release, pypi, conda, release-date
-
   - repo: pyviz-dev/nbsite
     badges: gha, release, pypi, conda, gh-pages, site, release-date, docs-date
     gha_workflow: test.yml
@@ -81,6 +78,9 @@
 
   - repo: pyviz-dev/pyctdev
     badges: release, pypi, conda, pre-release-date
+
+  - repo: pyviz-dev/sphinx_holoviz_theme
+    badges: release, pypi, conda, release-date
 
 - name: Websites only
 

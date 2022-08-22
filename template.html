@@ -24,13 +24,13 @@
           <a href="http://github.com/{{ package.repo }}">{{ package.name }}</a>
         </td>
           {% if 'gha' in package.badges %}
-            {% if section.name == "Core and Coordinated packages" %}
+            {% if section.name in ["Core and Coordinated packages", "Tooling and Infrastructure packages"] %}
             <td align='left'>
               <a href="https://github.com/{{ package.repo }}/actions/workflows/test.yaml?query=branch:{{ package.branch }}">  
-                <img src="https://github.com/{{ package.repo }}/actions/workflows/test.yaml/badge.svg">
+                <img src="https://github.com/{{ package.repo }}/actions/workflows/test.yaml/badge.svg" alt="-">
               </a>
               <a href="https://github.com/{{ package.repo }}/actions/workflows/build.yaml?query=branch:{{ package.branch }}">  
-                <img src="https://github.com/{{ package.repo }}/actions/workflows/build.yaml/badge.svg">
+                <img src="https://github.com/{{ package.repo }}/actions/workflows/build.yaml/badge.svg" alt="-">
               </a>
               <a href="https://github.com/{{ package.repo }}/actions/workflows/docs.yaml?query=branch:{{ package.branch }}">  
                 <img src="https://github.com/{{ package.repo }}/actions/workflows/docs.yaml/badge.svg" alt="-">
