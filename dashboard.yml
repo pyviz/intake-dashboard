@@ -29,7 +29,7 @@
   - repo: holoviz/lumen
     badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
 
-- name: Metapackages and Example packages
+- name: Metapackages, Example packages, and Websites only
 
   packages:
 
@@ -48,6 +48,20 @@
     badges: gha, gh-pages, site, release-date, docs-date
     gha_workflow: test.yml
     site: examples.pyviz.org
+
+  - repo: pyviz/pyviz.org
+    badges: gha, site, docs-date
+    site: pyviz.org
+    gha_workflow: docs.yml
+
+  - repo: pyviz-dev/status-dashboard
+    badges: gha, site, docs-date
+    site: status.holoviz.org
+    gha_workflow: docs.yaml
+
+  - repo: pyviz-topics/EarthML
+    badges: site, docs-date
+    site: earthml.holoviz.org
 
 - name: Tooling and Infrastructure packages
 
@@ -81,24 +95,6 @@
 
   - repo: holoviz/jupyter-panel-proxy
     badges: gha, release, pypi, conda, conda-forge, defaults, release-date
-
-- name: Websites only
-
-  packages:
-
-  - repo: pyviz/pyviz.org
-    badges: gha, site, docs-date
-    site: pyviz.org
-    gha_workflow: docs.yml
-
-  - repo: pyviz-dev/status-dashboard
-    badges: gha, site, docs-date
-    site: status.holoviz.org
-    gha_workflow: docs.yaml
-
-  - repo: pyviz-topics/EarthML
-    badges: site, docs-date
-    site: earthml.holoviz.org
 
 - name: Associated packages
 
