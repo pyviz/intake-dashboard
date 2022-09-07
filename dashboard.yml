@@ -29,15 +29,6 @@
   - repo: holoviz/lumen
     badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
 
-  - repo: holoviz/spatialpandas
-    badges: gha, release, pypi, conda, conda-forge, defaults, release-date
-
-  - repo: holoviz/pyviz_comms
-    badges: gha, release, pypi, conda, conda-forge, defaults, release-date
-
-  - repo: holoviz/jupyter-panel-proxy
-    badges: gha, release, pypi, conda, conda-forge, defaults, release-date
-
 - name: Metapackages and Example packages
 
   packages:
@@ -81,6 +72,15 @@
 
   - repo: pyviz-dev/sphinx_holoviz_theme
     badges: gha, release, pypi, conda, release-date
+
+  - repo: holoviz/spatialpandas
+    badges: gha, release, pypi, conda, conda-forge, defaults, release-date
+
+  - repo: holoviz/pyviz_comms
+    badges: gha, release, pypi, conda, conda-forge, defaults, release-date
+
+  - repo: holoviz/jupyter-panel-proxy
+    badges: gha, release, pypi, conda, conda-forge, defaults, release-date
 
 - name: Websites only
 
