@@ -63,6 +63,10 @@
     badges: site, docs-date
     site: earthml.holoviz.org
 
+  - repo: pyviz-dev/blog
+    badges: site
+    site: blog.pyviz.org
+
 - name: Tooling and Infrastructure packages
 
   packages:
