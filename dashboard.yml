@@ -3,30 +3,38 @@
   packages:
 
   - repo: holoviz/panel
+    branch: main
     badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
 
   - repo: holoviz/hvplot
+    branch: main
     badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
 
   - repo: holoviz/datashader
+    branch: main
     site: datashader.org
     badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
 
   - repo: holoviz/geoviews
+    branch: main
     site: geoviews.org
     badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
 
   - repo: holoviz/holoviews
+    branch: main
     site: holoviews.org
     badges: gha, codecov, release, pypi, conda, conda-forge, defaults, site, release-date
   
   - repo: holoviz/colorcet
+    branch: main
     badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
   
   - repo: holoviz/param
+    branch: main
     badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
 
   - repo: holoviz/lumen
+    branch: main
     badges: gha, codecov, release, pypi, conda, conda-forge, defaults, gh-pages, site, release-date, docs-date
 
 - name: Metapackages, Example packages, and Websites only
@@ -34,36 +42,44 @@
   packages:
 
   - repo: pyviz-topics/imagen
+    branch: main
     badges: release, pypi, gh-pages, site, release-date, docs-date
 
   - repo: holoviz/holoviz
+    branch: main
     site: holoviz.org
     badges: gha, release, pypi, conda, gh-pages, site, release-date, docs-date
     gha_workflow: test.yaml
 
   - repo: pyviz-topics/EarthSim
+    branch: main
     badges: release, conda-forge, gh-pages, site, release-date, docs-date
 
   - repo: pyviz-topics/examples
+    branch: main
     badges: gha, gh-pages, site, release-date, docs-date
     gha_workflow: test.yml
     site: examples.pyviz.org
 
   - repo: pyviz/pyviz.org
+    branch: main
     badges: gha, site, docs-date
     site: pyviz.org
     gha_workflow: docs.yml
 
   - repo: pyviz-dev/status-dashboard
+    branch: main
     badges: gha, site, docs-date
     site: status.holoviz.org
     gha_workflow: docs.yaml
 
   - repo: pyviz-topics/EarthML
+    branch: main
     badges: site, docs-date
     site: earthml.holoviz.org
 
   - repo: pyviz-dev/blog
+    branch: main
     badges: site
     site: blog.pyviz.org
 
@@ -72,32 +88,41 @@
   packages:
 
   - repo: pyviz-dev/nbsite
+    branch: main
     badges: gha, release, pypi, conda, gh-pages, site, release-date, docs-date
     gha_workflow: test.yml
 
   - repo: pyviz-dev/nbsmoke
+    branch: main
     badges: gha, codecov, release, pypi, conda, conda-forge, defaults, release-date
     gha_workflow: tests.yaml
 
   - repo: pyviz-dev/autover
+    branch: main
     badges: gha, release, pypi, release-date
 
   - repo: pyviz-dev/pyct
+    branch: main
     badges: gha, release, pypi, conda, conda-forge, defaults, release-date
 
   - repo: pyviz-dev/pyctdev
+    branch: main
     badges: gha, release, pypi, conda, pre-release-date
 
   - repo: pyviz-dev/sphinx_holoviz_theme
+    branch: main
     badges: gha, release, pypi, conda, release-date
 
   - repo: holoviz/spatialpandas
+    branch: main
     badges: gha, release, pypi, conda, conda-forge, defaults, release-date
 
   - repo: holoviz/pyviz_comms
+    branch: main
     badges: gha, release, pypi, conda, conda-forge, defaults, release-date
 
   - repo: holoviz/jupyter-panel-proxy
+    branch: main
     badges: gha, release, pypi, conda, conda-forge, defaults, release-date
 
 - name: Associated packages
