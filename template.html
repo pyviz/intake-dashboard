@@ -24,7 +24,7 @@
           <a href="http://github.com/{{ package.repo }}">{{ package.name }}</a>
         </td>
           {% if 'gha' in package.badges %}
-            {% if section.name in ["Core and Coordinated packages", "Tooling and Infrastructure packages"] %}
+            {% if section.name in ["Core packages", "Extension packages", "Tooling and Infrastructure packages"] %}
             <td align='left'>
               <a href="https://github.com/{{ package.repo }}/actions/workflows/test.yaml?query=branch:{{ package.branch }}">  
                 <img src="https://github.com/{{ package.repo }}/actions/workflows/test.yaml/badge.svg" alt="-">

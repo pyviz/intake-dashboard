@@ -14,7 +14,7 @@ def make_status():
             package['badges'] = [x.strip() for x in package['badges'].split(',')]
             package['conda_package'] = package.get('conda_package', package['name'])
             if 'branch' not in package:
-                package['branch'] = 'master'  # Assumes 'master' branch is the default
+                package['branch'] = 'main'  # Assumes 'main' branch is the default
             if 'rtd' in package['badges'] and 'rtd_name' not in package:
                 package['rtd_name'] = package['name']
             if 'pypi' in package['badges'] and 'pypi_name' not in package:
