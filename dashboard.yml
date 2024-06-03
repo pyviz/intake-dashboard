@@ -41,7 +41,7 @@
 
   packages:
 
-  - repo: pyviz-topics/imagen
+  - repo: holoviz-topics/imagen
     branch: main
     badges: release, pypi, gh-pages, site, release-date, docs-date
 
@@ -51,11 +51,11 @@
     badges: gha, release, pypi, conda, gh-pages, site, release-date, docs-date
     gha_workflow: test.yaml
 
-  - repo: pyviz-topics/EarthSim
+  - repo: holoviz-topics/EarthSim
     branch: main
     badges: release, conda-forge, gh-pages, site, release-date, docs-date
 
-  - repo: pyviz-topics/examples
+  - repo: holoviz-topics/examples
     branch: main
     badges: gha, gh-pages, site, release-date, docs-date
     gha_workflow: test.yml
@@ -67,18 +67,18 @@
     site: pyviz.org
     gha_workflow: docs.yml
 
-  - repo: pyviz-dev/status-dashboard
+  - repo: holoviz-dev/status-dashboard
     branch: main
     badges: gha, site, docs-date
     site: status.holoviz.org
     gha_workflow: docs.yaml
 
-  - repo: pyviz-topics/EarthML
+  - repo: holoviz-topics/EarthML
     branch: main
     badges: site, docs-date
     site: earthml.holoviz.org
 
-  - repo: pyviz-dev/blog
+  - repo: holoviz-dev/blog
     branch: main
     badges: site
     site: blog.pyviz.org
@@ -87,29 +87,29 @@
 
   packages:
 
-  - repo: pyviz-dev/nbsite
+  - repo: holoviz-dev/nbsite
     branch: main
     badges: gha, release, pypi, conda, gh-pages, site, release-date, docs-date
     gha_workflow: test.yml
 
-  - repo: pyviz-dev/nbsmoke
+  - repo: holoviz-dev/nbsmoke
     branch: main
     badges: gha, codecov, release, pypi, conda, conda-forge, defaults, release-date
     gha_workflow: tests.yaml
 
-  - repo: pyviz-dev/autover
+  - repo: holoviz-dev/autover
     branch: main
     badges: gha, release, pypi, release-date
 
-  - repo: pyviz-dev/pyct
+  - repo: holoviz-dev/pyct
     branch: main
     badges: gha, release, pypi, conda, conda-forge, defaults, release-date
 
-  - repo: pyviz-dev/pyctdev
+  - repo: holoviz-dev/pyctdev
     branch: main
     badges: gha, release, pypi, conda, pre-release-date
 
-  - repo: pyviz-dev/sphinx_holoviz_theme
+  - repo: holoviz-dev/sphinx_holoviz_theme
     branch: main
     badges: gha, release, pypi, conda, release-date
 

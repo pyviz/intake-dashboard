@@ -1,7 +1,0 @@
-name: status
-channels:
-  - defaults
-dependencies:
-  - jinja2=3.0.1
-  - python=3.9.6
-  - pyyaml=5.4.1

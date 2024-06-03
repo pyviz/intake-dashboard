@@ -19,29 +19,20 @@ jobs:
     env:
       DESC: "Documentation build"
     steps:
-      - uses: actions/checkout@v2
-      - uses: conda-incubator/setup-miniconda@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          miniconda-version: "latest"
-      - name: Conda environment setup
-        run: |
-          conda config --set always_yes True
-          conda install -c pyviz "pyctdev>=0.5"
-          doit ecosystem_setup
-          doit env_create
-          doit env_capture
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
       - name: Build website
-        run: |
-          eval "$(conda shell.bash hook)"
-          conda activate test-environment
-          doit build_website
+        run: python build_website.py
       - name: git status
         run: |
           git status
           git diff
       - name: Deploy site
         if: ${{ github.ref == 'refs/heads/main' }}
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./builtdocs

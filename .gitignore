@@ -11,3 +11,6 @@ builtdocs/
 .DS_Store
 
 status.html
+
+.venv/
+
